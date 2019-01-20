@@ -39,7 +39,7 @@ func add(x, y string) (string, string){
 }
 fmt.Println(add("Hello","There")) // Prints **Hello There**
 ```
-*Notes*
+* *Notes*
     * Static typing, declared types don't change after compilation
     * External function have to be called till the subfolder/submodule in which the exist
     * Println space separated the arguments passed i.e the two strings returned from function get space separated

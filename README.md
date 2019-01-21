@@ -1,7 +1,7 @@
 # Go programming language
 This is a doc aimed for quick basics of Go
 
-1. Hello world
+1. ## Hello world
 ```go
 
 package main
@@ -12,7 +12,7 @@ func main(){
 }
 ```
 
-2. Variables, Comments, Functions
+2. ## Variables, Comments, Functions
 ```go
 
 // First way
@@ -45,4 +45,13 @@ fmt.Println(add("Hello","There")) // Prints **Hello There**
     * Println space separated the arguments passed i.e the two strings returned from function get space separated
     * Run ```godoc <full-package-folder-name> <function-name>``` to get more details on a function
 
+3. ## Pointers
+```go
+
+a := 5
+x := &a // x now has the memory address of a
+*x = 2 // a now has the value 2. Because change was made at the address of a
+```
+* *Notes*
+    * Pointers work the same way they do in C/C++
 

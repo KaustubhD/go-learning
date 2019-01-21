@@ -1,6 +1,9 @@
 # Go programming language
 This is a doc aimed for quick basics of Go
 
+## How to run a .go file
+Type  ```go run <filename.go>``` in your command line. (Of course after downloading and installing the software from [their website](https://www.golang.org)
+
 1. ## Hello world
 ```go
 

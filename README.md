@@ -97,3 +97,41 @@ complex64 complex128
 // Eg to print a type and value of a variable :
 fmt.Printf("Type is %T and value is %v\n", x, x)
 ```
+
+6. Concurrency
+```go
+
+func exec(s: string){
+  for var i := 1; i <= 3; i++{
+    fmt.Println(s)
+    time.Sleep(time.Millisecond * 100)
+  }
+}
+
+// Method 1 (without routines)
+exec("Yo")
+exec("Ma Man")
+/* Output --
+  Yo
+  Yo
+  Yo
+  Ma Man
+  Ma Man
+  Ma Man
+*/
+
+// Method 2 (with routines)
+go exec("Yo")
+exec("Ma Man")
+/* Output --
+  Ma Man
+  Yo
+  Ma Man
+  Yo
+  Ma Man
+  Yo
+*/
+```
+* *Notes*
+    * Function calls with goroutines makes them (the functions) execute in a separate thread than the whole program. This gives us the benefit of concurrency in Go
+

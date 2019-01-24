@@ -93,4 +93,7 @@ rune // alias for int32
 float32 float64
 
 complex64 complex128
+
+// Eg to print a type and value of a variable :
+fmt.Printf("Type is %T and value is %v\n", x, x)
 ```

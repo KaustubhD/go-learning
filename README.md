@@ -58,3 +58,20 @@ x := &a // x now has the memory address of a
 * *Notes*
     * Pointers work the same way they do in C/C++
 
+4. ## Loops
+```go
+// Go has only one kind of loop i.e. *for* loop
+
+// Method 1
+for var i := 1; i < 10; i++{
+  fmt.Println(i)
+}
+
+// Method 2 (Equivalent of a while loop)
+var i := 1
+for ; i < 10 ;{
+  fmt.println(i)
+  i += 1
+}
+```
+

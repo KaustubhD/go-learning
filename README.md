@@ -75,7 +75,7 @@ for ; i < 10 ;{
 }
 ```
 
-5. Datatypes
+5. ## Datatypes
 ```go
 
 bool
@@ -98,7 +98,7 @@ complex64 complex128
 fmt.Printf("Type is %T and value is %v\n", x, x)
 ```
 
-6. Concurrency
+6. ## Concurrency
 ```go
 
 func exec(s: string){

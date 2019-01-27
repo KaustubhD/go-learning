@@ -139,6 +139,15 @@ exec("Ma Man")
 ```go
 
 occurences := make(map[string]int)
+
+// Setting values
 occurences["A"] = 12 // A occurs 12 times
 occurences["ABC"] = 2
+
+// Deleting values
+delete(grades,"A")
+
 ```
+* *Notes*
+    * Maps are reference types (not like int or float or string). This means that ```var a = map[int][int]``` behaves as an empty map but working on it will result in panic
+    * Therefore we use ```make()``` to allocate and initialise an empty hash map that we can now work on.

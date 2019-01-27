@@ -149,5 +149,5 @@ delete(grades,"A")
 
 ```
 * *Notes*
-    * Maps are reference types (not like int or float or string). This means that ```var a = map[int][int]``` behaves as an empty map but working on it will result in panic
+    * Maps are reference types (not like int or float or string). This means that ```var a = map[int]int``` behaves as an empty map but working on it will result in panic
     * Therefore we use ```make()``` to allocate and initialise an empty hash map that we can now work on.

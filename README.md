@@ -135,3 +135,10 @@ exec("Ma Man")
 * *Notes*
     * Function calls with goroutines makes them (the functions) execute in a separate thread than the whole program. This gives us the benefit of concurrency in Go
 
+7. ## Maps
+```go
+
+occurences := make(map[string]int)
+occurences["A"] = 12 // A occurs 12 times
+occurences["ABC"] = 2
+```

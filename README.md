@@ -151,3 +151,16 @@ delete(grades,"A")
 * *Notes*
     * Maps are reference types (not like int or float or string). This means that ```var a = map[int]int``` behaves as an empty map but working on it will result in panic
     * Therefore we use ```make()``` to allocate and initialise an empty hash map that we can now work on.
+
+8. ## Arrays
+```go
+
+var s [5]string
+var friends := [3]string{"Popular", "Bookworm", "Funny one", "Fitness freak"}
+
+fmt.Println(friends)
+
+for index, item := range friends{
+  fmt.Printf("Friend %d : %s", index, item)
+}
+```

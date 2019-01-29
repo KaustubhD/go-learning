@@ -164,3 +164,5 @@ for index, item := range friends{
   fmt.Printf("Friend %d : %s", index, item)
 }
 ```
+* *Notes*
+    * Arrays in go have fixed length; Once declared, the length cannot change

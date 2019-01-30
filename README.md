@@ -166,3 +166,20 @@ for index, item := range friends{
 ```
 * *Notes*
     * Arrays in go have fixed length; Once declared, the length cannot change
+
+9. ## Slices
+```go
+
+primes := [6]int{2, 3, 5, 7, 11, 13}
+
+var s []int = primes[1:4]
+s[0] = 99
+
+// primes is now {2, 99, 5, 7, 11, 13}
+```
+* *Notes*
+    * Slices are dynamically sized views into the elements of an array
+    * every slice is declared with two indices like ```[start : end]```
+    * Slices do not actually contain data. They are references to the elements of an array
+    * If the elements of a slice are changed, the corresponding elements of the array are changed too
+

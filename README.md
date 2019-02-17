@@ -170,6 +170,8 @@ for index, item := range friends{
 9. ## Slices
 ```go
 
+sl := make([]int, num) // num is the number of elements in the list
+
 primes := [6]int{2, 3, 5, 7, 11, 13}
 
 var s []int = primes[1:4]

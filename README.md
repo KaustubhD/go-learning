@@ -89,6 +89,7 @@ byte // alias for uint8
 
 rune // alias for int32
      // represents a Unicode code point
+     // In other words: a character
 
 float32 float64
 
